@@ -18,7 +18,12 @@
 **This requires csv-parse**
 
 3. Lastly, create a file called `memoryList.csv`
+4. (Optional) Move `memoryhelp` shell script to where you put your custom scripts
+Ex. I put mine in `/usr/local/bin`
 
 ## What this tool exactly does?
 * It "reminds" you to remember a visual you made to remember a concept or idea.
 * It "reminds" you every 1 day, 3 day, 7 day, 14 day, 21 day, 28 day, 2 month, and 3 month interval (as recommended by Kevin Horseley himself)
+
+## Sorry Windows Users
+* Yeah, this most probably doesn't work on Windows. Probably works on a Mac. And will work on Linux
