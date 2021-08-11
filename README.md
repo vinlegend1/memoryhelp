@@ -26,4 +26,4 @@ Ex. I put mine in `/usr/local/bin`
 * It "reminds" you every 1 day, 3 day, 7 day, 14 day, 21 day, 28 day, 2 month, and 3 month interval (as recommended by Kevin Horseley himself)
 
 ## Sorry Windows Users
-* Yeah, this most probably doesn't work on Windows. Probably works on a Mac. And will work on Linux
+* Yeah, `memoryhelp` shell script most probably doesn't work on Windows, but the NodeJS script still should work. Probably works on a Mac. And will work on Linux
