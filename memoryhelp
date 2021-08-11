@@ -1,0 +1,34 @@
+#!/bin/bash
+cd ~/Desktop/Projects/checkMemory
+
+case $1 in
+    -e)
+        /usr/bin/nvim memoryList.csv
+        ;;
+    -a)
+        x=$(node index -a "$2")
+        echo "Added $2"
+        ;;
+    -l)
+        x=$(node index -l)
+        echo "$x"
+        ;;
+    -h)
+        echo "Usage:"
+        echo "-e to edit your memory list"
+        echo "-a to add something to memory list"
+        echo "-l to list all the names in your memory"
+        echo "no options returns all things to review for today"
+        ;;
+    *)
+        x=$(node index)
+
+        if [[ $x == "none for today" ]]
+        then
+            exit
+        else
+            echo "$x"
+            notify-send "$x"
+        fi
+        ;;
+esac
